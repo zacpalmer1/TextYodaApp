@@ -4,26 +4,28 @@
 - Instead you can download my project and run it through Android Studio
 ## 
 
-![Screenshot 2023-03-29 at 9 41 56 PM](https://user-images.githubusercontent.com/75393933/228706192-119793b0-4555-4f5d-a5bc-637efd089a81.png)
+<img width="200" alt="Screenshot 2023-03-16 at 7 42 03 PM" src="https://user-images.githubusercontent.com/75393933/228706192-119793b0-4555-4f5d-a5bc-637efd089a81.png">
 
 ##
 ## Assignment guidlines
-Create an application that implements a tip calculator. There should be one activity/screen as follows:
-1. Provide a TextView prompt and an EditText field for entering the bill amount.
-2. Provide at least four radio buttons for calculating the tip. When the user selects one of these buttons, both the tip and the total bill (including the tip) are automatically calculated and displayed in TextView fields. For example, the four buttons could represent a 10%, 15%, 18%, and 20% tip.
-3. Edit the default theme to swap values for the primary and secondary colors; e.g.,
-<item name="colorPrimary">@color/teal_200</item>. For this assignment you are not required to edit the night theme colors, but for a real production app you would likely want to edit that theme as well.
-4. You are required to save/restore the state of the tip calculator, so that the state is preserved when the phone’s screen orientation changes; e.g., from portrait to landscape or vice versa.
-Run the application on an Android phone or virtual device. It should look similar to the screen shot on the following page.
+Create an application similar to the Yoda translator illustrated in class and outlined in slides
+“15 – Networking”. The application should accept information from the user, use that information as part of an internet query, retrieve information in JSON format, parse the information, and display the results to the user. There should be one activity/screen described as follows:
+1. Display a prompt and an EditText field for entering information from the user. The EditText should have input type "textMultiLine".
+2. To improve usability, when the app starts, focus should be set to the EditText for the user information, and the keyboard should display automatically. (Don’t make the user have to click in the EditText field to initiate these behaviors. See slides “10 – Widgets” for details on setting focus and automatically displaying the keyboard.)
+3. Provide a button to initiate transfer of the information.
+4. Display the retrieved information (i.e., the parsed JSON information) to the user in a TextView.
+Use an attribute similar to android:lines="20" for the TextView.
+5. Use a coroutine or a network support library (e.g., Volley, Retrofit, or OkHttp) to retrieve the information. You can also use a separate thread and View.post(Runnable), but you can get an A+ on the assignment only if you use coroutines or a network support library.
+6. You are not required to save/restore the state of the application.
+7. You should have at least minimal error handing if an error is encountered during the retrieval of the information.
 
 ## Above and Beyond
 All changes made were approved by the professor beofre submission
 ### Improved UI
-- Implamented a CardView to distiguish functionality of application
+- Implamented a CardView and placed an image of yoda inside
 - Used personalized color scheme 
-- Created a background to match color theme
+- Created a view with dirt-like design to match theme
 
 ### Improved Functionality
-- Created a functional round tip button
-- Allowed updated toggles to automatically update output
+- Limited the text size to 28 characters to fit text bubble
 - When app is opened, keyboard and cursor are automatically displayed and placed
