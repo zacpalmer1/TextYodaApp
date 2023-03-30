@@ -9,7 +9,7 @@
     <style name="car_view" parent="TextAppearance.AppCompat">
         <item name="android:layout_height">450dp</item>
         <item name="android:layout_width">350dp</item>
-        <item name="android:layout_marginBottom">420dp</item>
+        <item name="android:layout_marginBottom">320dp</item>
     </style>
     <style name="yoda_image" parent="TextAppearance.AppCompat">
         <item name="android:layout_height">526dp</item>
@@ -46,7 +46,7 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/text</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">"@ull"</item>
+        <item name="android:background">"@null"</item>
         <item name="android:inputType">textMultiLine</item>
         <item name="android:maxLength">48</item>
     </style>
