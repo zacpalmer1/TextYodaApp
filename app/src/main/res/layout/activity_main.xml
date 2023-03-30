@@ -18,8 +18,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_marginBottom="290dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="320dp"
         app:cardBackgroundColor="@color/yoda"
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="526dp"
             android:layout_marginStart="10dp"
-            android:paddingBottom="200dp"
+            android:paddingBottom="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,12 +44,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/yoday"
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="150dp"
             app:cardBackgroundColor="@color/tan"
-            app:cardCornerRadius="55dp"
+            app:cardCornerRadius="15dp"
             app:cardElevation="8dp"
             tools:ignore="MissingConstraints">
             <TextView
@@ -66,12 +65,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/text_bubble"
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginBottom="250dp"
+            android:layout_marginTop="350dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="45dp"
+            app:cardCornerRadius="15dp"
             app:cardElevation="8dp"
             tools:ignore="MissingConstraints">
             <EditText
@@ -90,10 +88,10 @@
         </androidx.cardview.widget.CardView>
         <Button
             android:layout_width="40dp"
-            android:layout_height="50dp"
-            app:cornerRadius="50dp"
+            android:layout_height="90dp"
+            app:cornerRadius="13dp"
             android:backgroundTint="@color/button"
-            android:layout_marginTop="285dp"
+            android:layout_marginTop="345dp"
             android:layout_marginStart="288dp"
             android:elevation="8dp"
             android:stateListAnimator="@null"
