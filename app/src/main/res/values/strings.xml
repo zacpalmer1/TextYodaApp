@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Text Yoda</string>
+    <string name="background_description">Dirt Background</string>
+    <string name="image_description">Image of Yoda</string>
 </resources>

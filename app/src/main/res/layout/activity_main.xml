@@ -8,18 +8,16 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content"
+        style ="@style/dirt_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:paddingBottom="350dp"
         app:srcCompat="@drawable/dirt2"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/background_description" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
-        android:layout_marginBottom="320dp"
+        style ="@style/car_view"
         app:cardBackgroundColor="@color/yoda"
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
@@ -32,74 +30,49 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="526dp"
-            android:layout_marginStart="10dp"
-            android:paddingBottom="100dp"
+            style ="@style/yoda_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/yoda" />
+            app:srcCompat="@drawable/yoda"
+            android:contentDescription="@string/image_description" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/yoday"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
+            style="@style/yoda_text_bubble"
             app:cardBackgroundColor="@color/tan"
             app:cardCornerRadius="15dp"
             app:cardElevation="8dp"
             tools:ignore="MissingConstraints">
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="16dp"
-                android:textAlignment="center"
-                android:layout_marginTop="10dp"
-                android:text="World Hello Yoda says!"
-                android:textColor="@color/text"
-                android:textStyle="bold" />
+                android:id="@+id/display_text"
+                style="@style/yoda_text" />
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/text_bubble"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="350dp"
+            style="@style/user_text_bubble"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="15dp"
             app:cardElevation="8dp"
             tools:ignore="MissingConstraints">
+
             <EditText
                 android:id="@+id/yoda_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="@color/text"
-                android:inputType="text"
-                android:textSize="16dp"
+                style="@style/user_text"
                 android:autofillHints="Text Yoda!"
-                android:textAlignment="center"
-                android:background="@null"
-                android:textStyle="bold"
-                android:maxLength="28"/>
+                tools:ignore="LabelFor" />
 
         </androidx.cardview.widget.CardView>
+
         <Button
-            android:layout_width="40dp"
-            android:layout_height="90dp"
+            style="@style/send_button"
             app:cornerRadius="13dp"
-            android:backgroundTint="@color/button"
-            android:layout_marginTop="345dp"
-            android:layout_marginStart="288dp"
-            android:elevation="8dp"
-            android:stateListAnimator="@null"
-            android:text="S"
-            android:textSize="15dp"
             />
 
     </androidx.cardview.widget.CardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

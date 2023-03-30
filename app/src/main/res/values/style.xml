@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dirt_background" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">450dp</item>
+        <item name="android:paddingBottom">350dp</item>
+        <item name="android:contentDescription">"@string/background_discription"</item>
+    </style>
+    <style name="car_view" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">450dp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_marginBottom">420dp</item>
+    </style>
+    <style name="yoda_image" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">526dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingBottom">100dp</item>
+    </style>
+    <style name="yoda_text_bubble" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="user_text_bubble" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginTop">350dp</item>
+    </style>
+    <style name="yoda_text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:text">World Hello Yoda says!</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="user_text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">"@ull"</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:maxLength">48</item>
+    </style>
+    <style name="send_button" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:backgroundTint">@color/button</item>
+        <item name="android:layout_marginTop">345dp</item>
+        <item name="android:layout_marginStart">288dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:text">S</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
