@@ -47,7 +47,7 @@
             tools:ignore="MissingConstraints">
 
             <TextView
-                android:id="@+id/display_text"
+                android:id="@+id/yoda_text"
                 style="@style/yoda_text" />
 
         </androidx.cardview.widget.CardView>
@@ -61,7 +61,7 @@
             tools:ignore="MissingConstraints">
 
             <EditText
-                android:id="@+id/yoda_text"
+                android:id="@+id/user_text"
                 style="@style/user_text"
                 android:autofillHints="Text Yoda!"
                 tools:ignore="LabelFor" />
@@ -69,6 +69,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:id="@+id/send_button"
             style="@style/send_button"
             app:cornerRadius="13dp"
             />
