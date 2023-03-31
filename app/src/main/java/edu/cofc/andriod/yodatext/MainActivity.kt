@@ -12,7 +12,6 @@ import java.net.URLEncoder
 import org.json.JSONObject
 import kotlin.concurrent.thread
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private fun getYodaString(userText: String): String {
@@ -33,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 yodaStr = resources.getString(R.string.error_message)
             }
         }
+        //Catch exceptions
         catch (ex: Exception) {
             Log.e("YodaTranslation", ex.stackTraceToString())
             yodaStr = "${ex.message}"
