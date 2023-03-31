@@ -16,7 +16,7 @@ import kotlin.concurrent.thread
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private fun getYodaString(userText: String): String {
-        var yodaStr : String
+        var yodaStr: String
         val baseUrl =
             "https://api.funtranslations.com/translate/yoda.json?text="
         val encodedEnglishText = URLEncoder.encode(userText, "UTF-8")
@@ -29,24 +29,23 @@ class MainActivity : AppCompatActivity() {
                 val contents = jsonObj.getJSONObject("contents")
                 yodaStr = contents.getString("translated")
             }
-            else if (jsonObj.has("error")){
-                yodaStr = "Error Too Many Tries"
-            }
             else {
                 yodaStr = resources.getString(R.string.error_message)
             }
         }
-        catch (ex : Exception) {
+        catch (ex: Exception) {
             Log.e("YodaTranslation", ex.stackTraceToString())
             yodaStr = "${ex.message}"
         }
         return yodaStr
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.root.setBackgroundColor(Color.parseColor("#FFFFFF"))
+        // Allows keyboard to open with add focus
         val editText = findViewById<EditText>(R.id.user_text)
         editText.requestFocus()
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
