@@ -1,4 +1,4 @@
-# Tip Calculator
+# Text Yoda App
 ## How to use my app
 - This app has not been uplaoded to the Google Play Store
 - Instead you can download my project and run it through Android Studio
