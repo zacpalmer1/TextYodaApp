@@ -4,7 +4,7 @@
 - Instead you can download my project and run it through Android Studio
 ## 
 
-<img width="200" alt="Screenshot 2023-03-16 at 7 42 03 PM" src="https://user-images.githubusercontent.com/75393933/228706192-119793b0-4555-4f5d-a5bc-637efd089a81.png">
+<img width="200" alt="Screenshot 2023-03-16 at 7 42 03 PM" src="https://user-images.githubusercontent.com/75393933/230251620-5f52d4c7-fb9b-49c5-b986-f2a836ef630d.png">
 
 ##
 ## Assignment guidlines
@@ -28,4 +28,3 @@ All changes made were approved by the professor beofre submission
 
 ### Improved Functionality
 - Limited the text size to 28 characters to fit text bubble
-- When app is opened, keyboard and cursor are automatically displayed and placed
