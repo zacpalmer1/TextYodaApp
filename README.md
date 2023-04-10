@@ -1,4 +1,6 @@
 # Text Yoda App
+<img width="200" alt="Screenshot 2023-03-16 at 7 42 03 PM" src="https://user-images.githubusercontent.com/75393933/230906040-ed657e4b-08f5-4f35-aac1-bbe85ab2dd92.png">
+
 ## How to use my app
 - This app has not been uplaoded to the Google Play Store
 - Instead you can download my project and run it through Android Studio
